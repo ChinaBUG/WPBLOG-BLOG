@@ -1,0 +1,392 @@
+---
+ID: 631
+post_title: FLASH脚本命令参考
+author: ChinaBUG
+post_excerpt: >
+  FLASH的函数与操作符列表。在线参考简表噢。
+layout: post
+permalink: >
+  http://blog.ipodmp.com/2010/06/flash-script-command-reference.html
+published: true
+post_date: 2010-06-08 09:11:45
+---
+<span style="text-decoration: underline;"><strong>函数列表</strong></span>
+
+- Go to 跳转到指定的帧
+- Play 播放
+- Stop 停止
+- Toggle High Quality 在高画质和低画质间切换
+- Stop All Sounds 停止所有声音的播放
+- Get URL 跳转至某个超联结
+- FSCommand 发送FSCommand命令
+- Load Movie 装载影片
+- Unload Movie 卸载影片
+- Tell Target 告知目标
+- If Frame Is Loaded ..判断帧是否被完全载入
+- On Mouse Event 鼠标事件
+
+- break 跳出循环
+- call 调用指定帧（一般喊有某个特定函数）
+- comment 注释
+- continue 继续循环
+- delete 删除一个对象(Object)中的变量
+- do while do while循环
+- duplicateMovieClip 复制MC
+- else 否则(与if联用)
+- else if 否则如果(与if联用)
+- evaluate 调用自定义函数(Function)
+- for for循环
+- for .. in 依次取得对象(Object)中的各个属性或者某个数组中的所有元素
+- FSCommand 发送FSCommand命令
+- function 声明自定义函数
+- getURL 跳转至某个超联结
+- goto 跳转到指定的帧
+- if 如果
+- ifFrameLoaded ..帧是否完全被载入
+- include 读入外部的ActionScript程序文件(.as)
+- loadMovie 装载MC
+- loadVariables 转载外部文件中的数据，这些外部文件可以是文本文件，或者是由ASP/CGI等脚本返回的文本值
+- on 鼠标事件的触发条件
+- onClipEvent MC的事件触发程序
+- play 播放
+- print 输出到打印机
+- removeMovieClip 删除MC
+- return 在函数(function)中返回一个值
+- set variable 设定变量值
+- setProperty 设定属性
+- startDrag 开始拖动
+- stop 停止
+- stopAllSounds 停止所有声音的播放
+- stopDrag 停止拖动
+- swapDepths 交换两个MC的深度
+- tellTarget 指定Action命令生效的目标
+- toggleHighQuality 在高画质和低画质间切换
+- trace 跟踪调试
+- unloadMovie 卸载MC
+- var 声明局部变量
+- while 当..成立时..
+- with 对..对象(Object)做..
+
+<span style="text-decoration: underline;"><strong>操作符</strong></span>
+
+- ! 逻辑非操作
+- != 不等于
+- "" 字符串
+- % 取余数
+- &amp;&amp; 逻辑与操作
+- () 括号
+- * 乘号
+- + 加号
+- ++ 变量自加一
+- - 减号
+- -- 变量自减一
+- / 除号
+- &lt; 小于
+- &lt;= 小于等于
+- &lt;&gt; 不等于
+- == 相等
+- &gt; 大于
+- &gt;= 大于等于
+- and 逻辑与
+- not 逻辑非
+- or 逻辑或
+- typeof 返回变量类型
+- void 实体,无返回
+- | | 逻辑或操作
++ Bitwise Operators 位操作符
+- &amp; 位与操作
+- &lt;&lt; 位左移
+- &gt;&gt; 位右移
+- &gt;&gt;&gt; 位右移(无符号)
+- ^ 位异或操作
+- | 位或操作
+- ~ 补位操作
++ Compound Assign Operators 复合操作符
+- %= A%=B 等效于 A=A%B
+- &amp;= A&amp;=B 等效于 A=A&amp;B
+- *= A*=B 等效于 A=A*B
+- += A+=B 等效于 A=A+B
+- -= A-=B 等效于 A=A-B
+- /= A/=B 等效于 A=A/B
+- &lt;&lt;= A&lt;&lt;=B 等效于 A=A&lt;&lt;B
+- &gt;&gt;= A&gt;&gt;=B 等效于 A=A&gt;&gt;B
+- &gt;&gt;&gt;= A&gt;&gt;&gt;=B 等效于 A=A&gt;&gt;&gt;B
+- ^= A^=B 等效于 A=A^B
+- |= A|=B 等效于 A=A|B
++ String Operators 字符串操作符（注：实质上是ASCII的比较）
+- add 连接两个字符串
+- eq A eq B 字符串A值与字符串值B相等
+- ge A ge B 字符串A值大于等于字符串B值
+- gt A gt B 字符串A值大于字符串B值
+- le A le B 字符串A值小于等于字符串B值
+- lt A lt B 字符串A值小于字符串B值
+- ne A ne B 字符串A值不等于字符串B值
++ Functions 函数
+- Boolean 取表达式的布尔值(True 或 False)
+- escape 除去URL串中的非法字符，将其参数按照URL编码的格式转化为字符串（String）
+- eval 访问并计算表达式(expression）的值，并以字符串（String）的形式返回该值
+- false 布尔非值(0)
+- getProperty 获取属性
+- getTimer 获取从电影开始播放到现在的总播放时间(毫秒数)
+- getVersion 获取浏览器的FLASHPlayer的版本号
+- globalToLocal 场景(Scene)中的坐标转换成MC中的坐标
+- hitTest 测试一个点或者MC是否同另一个交叉（即冲突检测）
+- int 把十进制数值强制转换成整数
+- isFinite 测试数值是否为有限数
+- isNaN 测试是否为非数值
+- keycode 返回键盘按下键的键盘值（ASCII值）
+- localToGlobal MC中的坐标转换成场景(Scene)中的坐标
+- maxscroll 文本框的最大行度
+- newline 换行符
+- Number 将参数转换成数值其返回值有以下四种情况：如果 x 为一数字，则返回值即为该数字；如果 x 为一布尔数，则返回0或1；如果 x 为一字符串，则函数将x解释为一个指数形式的十进制数；如果x未定义，则返回0。
+- parseFloat 将字符串转换成浮点数
+- parseInt 将字符串转换成整数
+- random 产生0到指定数间的随机数
+- scroll 文本框中的起始滚动行
+- String 将参数转换成字符串
+- targetPath 返回指定实例MC的路径字符串
+- true 布尔是值(1)
+- unescape 保留字符串中的%XX格式的十六进制字符
++ String Functions 字符串函数
+- chr 将ASCII码转换成相应字符
+- length 返回字符串的长度
+- mbchr 将ASCII/S-JIS编码转换成相应的多字节字符
+- mblength 返回多字节字符串的长度
+- mbord 将多字节字符转换成相应的ASCII/S-JIS编码
+- mbsubstring 截取多字节字符串中的字串
+- ord 将字符转换成ASCII码
+- substring 截取字符串中的子串
++ Properties 属性
+- _alpha Alpha值(透明度值)
+- _currentframe 在MC中的当前帧数
+- _droptarget 当使用Start drag拖动一个MC时，实时地返回该MC的绝对路径
+- _focusrect 高亮按钮或者某个当前区域的显示与否(True显示/Flase不显示)
+- _framesloaded 已载入的影帧数
+- _height MC的高度
+- _highquality 画质的高低(True高画质/False低画质)
+- _name MC的实例名
+- _quality 当前画质(字符串值) LOW,MEDIUM,HIGH,BEST
+- _rotation MC旋转的角度(单位:度)
+- _soundbuftime 声音的缓冲区大小(默认值5,单位:秒)
+- _target MC的路径
+- _totalframes 总帧数
+- _url 电影被调用的URL地址
+- _visible 是否可视(True可视/False不可视)
+- _width MC的宽度
+- _x MC的x坐标
+- _xmouse 鼠标的x坐标
+- _xscale MC的X轴向缩放度
+- _y MC的y坐标
+- _ymouse 鼠标的y坐标
+- _yscale MC的y轴向缩放度
++ Objects 对象
++ Array 数组
+- concat 合并多个数组
+- join 将一个数组中的元素转化成字符串，并通过特定的分割符进行联结，并返回结果字符串
+- length 返回数组长度
+- new Array 新建数组对象
+- pop 出栈 (FILO 先入后出)
+- push 入栈 (入队列)
+- reverse 反相(颠倒数组,及第一个元素和最后一个元素互换……)
+- shift 出队列 (FIFO 先入先出)
+- slice 截取数组中的子串生成新的数组
+- sort 数组元素的排序
+- splice 从数组中指定元素起删除指定个数的元素或者删除指定元素
+- unshift 从数组头部插入一个元素
++ Boolean 布尔对象
+- new Boolean 新建布尔型对象
+- toString 将布尔型对象的值转换成字符串值
+- valueOf 获取布尔型对象的值(返回值为布尔型)
++ Color 颜色对象
+- getRGB 获取颜色值的RGB分量(返回值0xRRGGBB十六进制)
+- getTransform 获取颜色值的转换量(返回值 cxform 型) [不太清楚]
+- new Color 新建一颜色对象
+- setRGB 设置颜色值的RGB分量(参数为0xRRGGBB十六进制)
+- setTransform 设置颜色值的转换量(参数为 cxform 型) [不太清楚]
++ Date 时间和日期对象
+- getDate 获取当前日期(本月的几号)
+- getDay 获取今天是星期几(0-Sunday,1-Monday...)
+- getFullYear 获取当前年份(四位数字)
+- getHours 获取当前小时数(24小时制,0-23)
+- getMilliseconds 获取当前毫秒数
+- getMinutes 获取当前分钟数
+- getMonth 获取当前月份(注意从0开始:0-Jan,1-Feb...)
+- getSeconds 获取当前秒数
+- getTime 获取UTC格式的从1970.1.1 0:00以来的秒数
+- getTimezoneOffset 获取当前时间和UTC格式的偏移值(以分钟为单位)
+- getUTCDate 获取UTC格式的当前日期(本月的几号)
+- getUTCDay 获取UTC格式的今天是星期几(0-Sunday,1-Monday...)
+- getUTCFullYear 获取UTC格式的当前年份(四位数字)
+- getUTCHours 获取UTC格式的当前小时数(24小时制,0-23)
+- getUTCMilliseconds 获取UTC格式的当前毫秒数
+- getUTCMinutes 获取UTC格式的当前分钟数
+- getUTCMonth 获取UTC格式的当前月份(注意从0开始:0-Jan,1-Feb...)
+- getUTCSeconds 获取UTC格式的当前秒数
+- getYear 获取当前缩写年份(当前年份减去1900)
+- new Date 新建日期时间对象
+- setDate 设置当前日期(本月的几号)
+- setFullYear 设置当前年份(四位数字)
+- setHours 设置当前小时数(24小时制,0-23)
+- setMilliseconds 设置当前毫秒数
+- setMinutes 设置当前分钟数
+- setMonth 设置当前月份(注意从0开始:0-Jan,1-Feb...)
+- setSeconds 设置当前秒数
+- setTime 设置UTC格式的从1970.1.1 0:00以来的秒数
+- setUTCDate 设置UTC格式的当前日期(本月的几号)
+- setUTCFullYear 设置UTC格式的当前年份(四位数字)
+- setUTCHours 设置UTC格式的当前小时数(24小时制,0-23)
+- setUTCMilliseconds 设置UTC格式的当前毫秒数
+- setUTCMinutes 设置UTC格式的当前分钟数
+- setUTCMonth 设置UTC格式的当前月份(注意从0开始:0-Jan,1-Feb...)
+- setUTCSeconds 设置UTC格式的当前秒数
+- setYear 设置当前缩写年份(当前年份减去1900)
+- toString 将日期时间值转换成"日期/时间"形式的字符串值
+- UTC 返回指定的UTC格式日期时间的固定时间值
++ Key 键盘对象
+- BACKSPACE Backspace(&lt;-)键
+- CAPSLOCK CapsLock键
+- CONTROL Ctrl键
+- DELETEKEY Delete(Del)键
+- DOWN 方向下键
+- END End键
+- ENTER Enter(回车)键
+- ESCAPE Esc键
+- getAscii 获取最后一个按下或松开的键的对应字符的Ascii码
+- getCode 获取最后一个被按下的键的键盘扫描码
+- HOME Home键
+- INSERT Insert(Ins)键
+- isDown 当指定键被按下时返回True值
+- isToggled 当Caps lock或者Num Lock键被锁定时返回真（True）
+- LEFT 方向左键
+- PGDN PageDown(PGDN)键
+- PGUP PageUp(PGUP)键
+- RIGHT 方向右键
+- SHIFT Shift键
+- SPACE 空格键
+- TAB Tab键
+- UP 方向上键
++ Math 数学函数对象
+- abs abs(n) 取n的绝对值
+- acos acos(n) n的反余弦(返回值单位:弧度)
+- asin asin(n) n的反正弦(返回值单位:弧度)
+- atan atan(n) n的反正切(返回值单位:弧度)
+- atan2 atan2(x,y) 计算x/y的反正切
+- ceil ceil(n) 取靠近n的上限的整数(向上取整)
+- cos cos(n) 取n的余弦(n的单位:弧度)
+- E Euler(欧拉)指数(约为2.718)
+- exp 指数
+- floor floor(n) 取靠近n的下限的整数(向下取整)
+- LN10 ln10(约等于2.302)
+- LN2 ln2(约等于0.693)
+- log 取自然对数(e为底)
+- LOG10E 10为底取E的对数(约等于0.434)
+- LOG2E 2为底取E的对数(约等于1.443)
+- max 返回两参数中的最大值
+- min 返回两参数中的最小值
+- PI 圆周率(约等于3.14159)
+- pow pow(x,y) x的y次方
+- random 产生0-1间的随机数
+- round 四舍五入取整
+- sin sin(n) 取n的正弦(n的单位:弧度)
+- sqrt 开根号
+- SQRT1_2 0.5开根号(约等于0.707)
+- SQRT2 2开根号(约等于1.414)
+- tan tan(n) 取n的正切(n的单位:弧度)
++ MovieClip 影片夹子对象
+- attachMovie 产生一个库中MC的实体并将它绑定到某个电影上
+- dupicateMovieClip 复制当前MC产生新的MC
+- getURL 使浏览器浏览指定页面
+- gotoAndPlay 跳转到指定帧并播放
+- gotoAndStop 跳转到指定帧并停止播放
+- loadMovie 引入一个外部电影到指定层
+- loadVariables 引入外部文件中的变量值
+- nextFrame 下一帧
+- play 播放
+- prevFrame 前一帧
+- removeMovieClip 删除用duplicateMovieClip创建的MC
+- startDrag 开始拖动MC
+- stop 停止MC的播放
+- stopDrag 停止拖动MC
+- unloadMovie 卸载由loadMovie引入的Movie
++ Mouse 鼠标对象
+- hide 隐藏鼠标指针
+- show 显示鼠标指针
++ Number 数值对象
+- MAX_value FLASH5 所允许的最大数值1.79769313486231 e 308
+- MIN_value FLASH5 所允许的最小数值5 e -324
+- NaN 是否为非数值(Not a Number)
+- NEGATIVE_INFINITY 是否为负数
+- new Number 新建数值对象
+- POSITIVE_INFINITY 是否为正数
+- toString 将数值转换成字符串
++ Object 对象
+- new Object 新建对象
+- toString 转换对象为字符串
+- valueOf 返回对象的值
++ Selection 选择区对象
+- getBeginIndex 获取可编辑文本区的起始位置,-1表示无可编辑文本区
+- getCaretIndex 获取当前的编辑位置,-1表示没有可编辑文本区
+- getEndIndex 获取可编辑文本区的结束位置,-1表示无可编辑文本区
+- getFocus 获取当前的激活文本区的文本变量名
+- setFocus 设置当前的激活文本区
+- setSelection 设置可编辑文本的起始位置和终止位置
++ Sound 声音对象
+- attachSound 绑定库中的一个声音
+- getPan 获取声音的混音值 [不太清楚]
+- getTransform 获取当前声音的变换量(返回值类型:sxform) [不太清楚]
+- getVolume 获取当前声音的音量(百分比)
+- new Sound 新建声音对象
+- setPan 设置声音的混音值 [不太清楚]
+- setTransform 设置当前声音的变换量(参数类型:sxform) [不太清楚]
+- setVloume 设置当前声音的音量(百分比)
+- start 开始播放当前声音
+- stop 停止播放当前声音
++ String 字符串对象
+- charAt 在指定的索引表中返回一个字符
+- charCodeAt 在指定的索引表中返回一个字符的代码
+- concat 联结合并多个字符串
+- fromCharCode 从字符代码组构造出一个新的字符串
+- indexOf 在字符串中寻找子串,返回子串起始位置或-1(-1表示未找到)
+- lastIndexOf 在字符串中寻找子串,返回子串终止位置或-1(-1表示未找到)
+- length 返回字符串的长度
+- new String 新建字符串对象
+- slice 返回字符串中指定截取的子串
+- split 根据限定符将字符串转换成一个数组
+- substr substr( start, length ) 返回从start开始，共length长的子串
+- substring substring( indexA, indexB ) 返回indexA..indexB之间的子串
+- toLowerCase 将字符串中的大写字符全部转换成小写
+- toUpperCase 将字符串中的小写字符全部转换成大写
++ XML 可扩充性标记语言对象
+- appendChild 添加一个子结点到指定的XML元素
+- attributes XML元素的属性数组
+- childNodes 一个XML元素的子结点数组
+- cloneNode 克隆(复制)当前结点
+- createElement 新建一个新的XML元素
+- createTextNode 新建一个新的XML文本结点
+- firstChild 返回当前XML结点的第一个子结点
+- hasChildNodes 当前XML结点是否有子结点(返回true有子结点/flash则无)
+- insertBefore 在一个指定的XML元素的子结点前插入一个新的子结点
+- lastChild 返回当前XML结点的最后一个子结点
+- load 从指定的URL把XML元素引入FLASH中
+- loaded 当XML元素引入或是发送同时引入FLASH中后,返回true值
+- new XML 新建一个XML对象
+- nextSibling 当前XML结点的下一个结点
+- nodeName 返回当前XML结点的名字
+- nodeType 返回当前XML结点的类型(1-元素,3-文本)
+- nodevalue 返回当前XML结点的值(text型返回文本)
+- onLoad 当引入或发送同时引入时触发事件
+- parentNode 返回当前XML结点的父结点
+- parseXML 将XML字符串转换成XML对象
+- previousSibling 当前XML结点的前一个结点
+- removeNode 从XML文本中删除结点
+- send 从FLASH中把一个XML元素发送到指定的URL地址
+- sendAndLoad 从FLASH中把一个XML元素发送到指定的URL地址同时引入XML结果
+- toString 把XML对象转换为XML字符串表达
++ XMLSocket XML套接口
+- close 关闭一个XML套接口
+- connect 连接一个XML套接口,指定URL,并定义其端口号
+- new XMLSocket 建立一个新的XML套接口
+- onClose 关闭XML套接口时触发事件
+- onConnect 连接XML套接口时触发事件
+- onXML 从服务器上获取XML时触发事件
+- send 发送XML给服务器
